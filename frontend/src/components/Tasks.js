@@ -69,7 +69,7 @@ function Tasks({ onLogout }) {
         {tasks.map((task) => (
           <li key={task._id}>
             <span
-              className={task.completed ? "completed" : ""}
+              style={{ textDecoration: task.completed ? "line-through" : "none", cursor: "pointer" }}
               onClick={() => toggleTask(task._id, task.completed)}
             >
               {task.content}

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // backend URL
+  baseURL: "https://mern-todo-app-4v28.onrender.com/api", // <-- updated backend URL
 });
 
 // Add token to every request automatically
